@@ -1,0 +1,35 @@
+<?php
+    // Connection parameters
+    $server = "localhost";
+    $userName = "root";
+    $pass = "";
+    $db = "movies"; // Change this to your database name if it's not "movies"
+
+    // Create connection
+    $con = mysqli_connect($server, $userName, $pass, $db);
+
+    // Check connection
+    if (!$con) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+    // Select data from persons table
+    $sql = "SELECT * FROM persons";
+    $result = $con->query($sql);
+
+    if ($result->num_rows > 0) {
+        // Output data of each row
+        echo "<h2>Persons Table</h2>";
+        echo "<table border='1'>";
+        echo "<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Pay</th></tr>";
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr><td>" . $row["personID"] . "</td><td>" . $row["firstName"] . "</td><td>" . $row["lastName"] . "</td><td>" . $row["pay"] . "</td></tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "0 results";
+    }
+
+    // Close connection
+    $con->close();
+?>
