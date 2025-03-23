@@ -1,7 +1,7 @@
 # Movie Database
 ![image](https://github.com/user-attachments/assets/a6cb4682-741e-4e03-bd2a-b7f9289badaa)
 
-The goal of this project is to deepen our knowledge in databases and full stack development in a fun way. To do this we made a web Gui that allows users to easily modify a database.
+The goal of this project is to deepen our knowledge in databases and full stack development in a fun way. To do this we made a web Gui that allows users to easily modify a movie database.
 
 ### Built With
 - HTML
