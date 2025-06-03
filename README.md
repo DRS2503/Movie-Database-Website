@@ -6,7 +6,7 @@ The goal of this project is to deepen our knowledge in databases and full stack 
 ### Built With
 - HTML
 - PHP
-- SQL
+- MySQL
 - Apache
 
 ## Installation 
